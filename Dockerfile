@@ -8,7 +8,7 @@
     COPY wg0.conf /etc/wireguard/wg0.conf
 
     # Expose the WireGuard UDP port (default is 51820)
-    EXPOSE 443/udp
+    EXPOSE 51820/udp
 
     # Set the entrypoint or command to start WireGuard
     CMD ["wg-quick", "up", "wg0"]
